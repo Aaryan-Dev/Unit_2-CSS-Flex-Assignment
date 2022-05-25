@@ -1,0 +1,126 @@
+<!-- Build the following layout using flex and its properties masai.png -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Navbar</title>
+
+    <style>
+        #navbar {
+            display: flex;
+            justify-content:space-between;
+            height:60px;
+        }
+        
+        #o1{
+            width: 15%;
+            text-align: center;
+            padding-top: 7px;
+        }
+        
+        #o1 img{ 
+            width: 70%;
+        }
+            
+        
+        #o2{
+            width: 75%;
+            display: flex;
+            /* justify-content:space-between; */
+            text-align: center;
+            
+        }
+    
+        #o2>div{
+            width:11%;
+            margin: auto;
+            font-size: 18px;
+            font-family:Cambria;
+        }
+       
+
+
+        #o2 div:last-child>button{
+            border: 1px solid red;
+            width: 100%;
+            border-radius: 5px;
+            background-color: white;
+            color: red;
+            padding: 10px;
+               
+        }
+        #o2 div:nth-child(7){
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            margin: 10px;
+            background-color: rgb(245, 246, 255);
+            border-radius: 5px;
+        }
+
+        #o2 div:nth-child(7)>img{
+            margin: auto;
+            width: 30px;
+            height: 30px;
+        }
+        #o2 div:nth-child(7)>p{
+            margin: auto;
+           
+        }
+        
+        
+        
+        </style>
+</head>
+
+
+
+<body>
+    
+    <div id="navbar">
+        <div id="o1">
+            <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="Masai">
+        </div>
+        
+        
+        <div id="o2">
+            <div><p>Courses ></p> </div>
+                
+           
+            <div>
+                <p>Fees & Isa</p>
+            </div>
+            <div>
+                <p>About Us</p>
+                
+            </div>
+            <div>
+                 <p>Hire from Us</p>
+            </div>
+            <div>
+            <p>FAQ</p>
+            </div>
+            <div>
+            <p>Events</p>
+            </div>
+            <div>
+              <p>Refer & Earn</p>
+              <img src="https://www.masaischool.com/img/referral/hand.png" alt="" >
+            </div>
+            <div>
+               <button>
+                   LOGIN
+               </button>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>
